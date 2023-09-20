@@ -3,12 +3,16 @@
     <head>
         <meta charset="utf-8">
         <title>Papa's Pizzaria</title>
+        <link rel= "stylesheet" href="../styles.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Lora:wght@400;700&display=swap" rel="stylesheet">
     </head>
     <body>
         <a href="../index.html"> Til baka á forsíðu</a>
         <h1>Viltu panta?</h1>
         <p>Viltu panta borð? eða panta heim?</p>
-
+    <form action="#">
         <h3>Panta borð</h3>
         <label for="time">Hvenær:</label>
         <input type="time" id="time" name="time" min="10:00" max="21:00" required />
@@ -22,7 +26,6 @@
         <input type="text" id="auka" name="auka" required minlength="4" maxlength="400" size="100" />
 
         <h3>Panta mat</h3>
-        <form action="#">
             <label for="food">Veldu rétt</label>
             <select name="matur" id="food">
               <option value="1">Kebbab pizza</option>
@@ -31,17 +34,15 @@
               <option value="4">Margaríta</option>
               <option value="5">Barna pizza</option>
             </select>
-        </form>
 
         <br>
         <label for="heimilsfang">Heimilsifang:</label>
         <input type="text" id="heimilsfang" name="heimilsfang" required minlength="4" maxlength="40" size="30" />
 
         <h3>Þínar upplýsingar</h3>
-        <form>
             <div class="group">
                 <label>Nafn</label>
-                <input type="text" required/>
+                <input type="text" required placeholder="..."/>
                 <label>Nauðsynlegt</label>
             </div>
             <div class="group">
@@ -54,13 +55,14 @@
                 <input type="text" required placeholder="1234567">
                 <label>Nauðsynlegt</label>
             </div>
-        </form>
         <h3>Samþykja og panta</h3>
         <label for="skilmala">Ég samþykki skilmála Veitingastaðsins</label>
         <input type="checkbox" id="skilmala" name="interest" value="skilmala"/>
         
         <br>
         <input type="submit"/>
+
+    </form>
     </body>
     <footer>
         <h4>Opnunartími</h4>
